@@ -1,16 +1,21 @@
+<div class="scroll">
+    <h1>Welcome to Sky's Burger Joint! Scroll Down to Eat a Burger!</h1>
+</div>
+<div class="fixed-bg"></div>
+
+<div class="container">
     <div class="header">
         <div class="row">
-            <div class="col s12 burg1">
-                <h1>Eat A Burger</h1>
+            <div class="col s12 burger1">
+                <h2>Eat The Burger</h2>
             </div>
-        </div> <!--/.row-->
-    </div> <!--/.header-->
-<div class="container">
+        </div> <!--end row-->
+    </div> <!--end header-->
+
     <div class="main">
-        <div class="row">
-            <div class="col s5 burg">
+            <div class="burger2">
                 <h3>Get in my Belly!</h3>
-                <ul>
+                <ol>
                     {{#each burgers}}
                         {{#unless this.devoured}}
                             <li>
@@ -18,15 +23,15 @@
 
                                 <form action="/{{this.id}}?_method=PUT" method="POST">
                                     <input type="hidden" name="devoured" value="true">
-                                    <button type="submit">Yum!</button>
+                                    <button type="submit">Devour It!</button>
                                 </form>
                             </li>
                         {{/unless}}
                     {{/each}}
-                </ul>
-            </div>
-            <div class="col s2"></div>
-            <div class="col s5 burg">
+                </ol>
+            </div> <!--end burger2 div-->
+
+            <div class="burger3">
                 <h3>Burgers Eaten!</h3>
                 <ul>
                     {{#each burgers}}
@@ -37,26 +42,24 @@
                         {{/if}}
                     {{/each}}
                 </ul>
-            </div>
-        </div> <!-- /.row -->
+            </div> <!--end burger3-->
 
-        <div class="row">
-            <div class="col s10 burg">
+            <div class="burger4">
                 <h3>Add a Burger</h3>
-                <form class="create-update-form" action="/index" method="POST">
-                    <div class="form-group burg-form">
-                        <label for="bu">Burger Name:</label>
-                        <input type="text" id="bu" name="name">
+                <form class="create-update-form" action="/" method="POST">
+                    <div class="form-group burger2-form">
+                        <label for="burg">Burger Name:</label>
+                        <input type="text" id="burg" name="name">
                     </div>
                     <button type="submit">Add A Burger</button>
                 </form>
-            </div>
-        </div> <!--/.row-->
-</div> <!-- /.container -->
-    </div> <!--/.main-->
-    <footer class="page-footer burg">
+            </div> <!--end burger4-->
+
+    </div> <!--end main-->
+</div> <!--end container -->
+    <footer class="page-footer">
         <div class="footer-copyright">
-            <div class="container">
+            <div class="container2">
                 © Copyright2017 Skylar Siagel
                 <a class="grey-text text-lighten-4 right" href="https://github.com/Skylarann725/Burger">GitHub Link</a>
             </div>
