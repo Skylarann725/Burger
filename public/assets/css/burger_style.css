@@ -34,7 +34,7 @@ h3 {
 .burger2 {
 	width: 350px;
 	margin-left: 250px;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	 font-family: 'Shadows Into Light', cursive;
 	font-size: 20px;
 }
