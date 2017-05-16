@@ -36,14 +36,11 @@ h3 {
     margin-top: -50px;
     font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
-    /* margin-right: 0; */
     float: left;
 }
 
 .burger3 {
     width: 350px;
-    /* margin-left: 750px; */
-    /* margin-top: -100px; */
     font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
     margin: 0;
@@ -59,7 +56,6 @@ h3 {
     margin-left: 450px;
     font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
-    /* margin: auto; */
     float: left;
     position: relative;
     bottom: -160px;
